@@ -1,0 +1,1 @@
+*Repositório com tema wordpress*
