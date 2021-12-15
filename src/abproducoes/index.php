@@ -1,7 +1,7 @@
 <?php
     get_header();
+
+    get_template_part('template-parts/index/section-1');
     
-        echo('<h1>AB Produções</h1>');
-        
     get_footer();
 ?>

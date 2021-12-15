@@ -1,4 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+section {
+  height: 700px;
+}
+section .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .container .combo_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+}
+section .container .combo_text h1 {
+  font-size: 60px;
+}
+section .container .combo_text p {
+  max-width: 440px;
+  font-size: 20px;
+  margin: 38px 0;
+}
+section .container .combo_text a {
+  width: 280px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 0;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
