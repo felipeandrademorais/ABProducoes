@@ -30,6 +30,24 @@ section {
                 align-items: center;
                 font-size: 18px;
                 padding: 0;
+            }        
+        }
+        .artistas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            button {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                border: 0;
+                background-position: center;
+                background-size: cover;
+                filter: grayscale(100%);
+            }
+            button:hover {
+                filter: grayscale(0);
             }
         }
     }

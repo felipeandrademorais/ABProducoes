@@ -34,6 +34,24 @@ section .container .combo_text a {
   font-size: 18px;
   padding: 0;
 }
+section .container .artistas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+section .container .artistas button {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 0;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+section .container .artistas button:hover {
+  filter: grayscale(0);
+}
 
 * {
   font-family: "Roboto", sans-serif;
