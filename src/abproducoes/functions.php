@@ -1,5 +1,8 @@
 <?php 
 
+//ACF Fields Plugin
+require get_template_directory() . '/inc/acf-fields.php';
+
 // Importando o arquivo do Customizer
 require get_template_directory() . '/inc/customizer.php';
 
@@ -16,3 +19,23 @@ function  load_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'load_scripts');
+
+
+function posts_types() {
+    register_post_type(
+		'artistas',
+		array(
+			'labels' => array(
+				'name' => __('Artistas'),
+				'singular_name' => __('Artistas')
+			),
+			'public' => false,
+			'show_ui' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-format-gallery',
+			'supports' => array('title')
+		)
+	);
+}
+
+add_action('init', 'posts_types');
