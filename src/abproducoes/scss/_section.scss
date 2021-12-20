@@ -55,4 +55,27 @@ section {
             }
         }
     }
+    .section_3 {
+        flex-direction: row;
+        .combo_text {
+            max-width: 50%;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .img {
+            width: 500px;
+            height: 332px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .img::before {
+            width: 500px;
+            height: 332px;
+            content: '';
+            margin: 30px;
+            background-color: #000;
+        }
+    }
 }

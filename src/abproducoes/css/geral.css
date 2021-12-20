@@ -56,6 +56,29 @@ section .container .artistas button {
 section .container .artistas button:hover {
   filter: grayscale(0);
 }
+section .section_3 {
+  flex-direction: row;
+}
+section .section_3 .combo_text {
+  max-width: 50%;
+  align-items: flex-start;
+  text-align: left;
+}
+section .section_3 .img {
+  width: 500px;
+  height: 332px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section .section_3 .img::before {
+  width: 500px;
+  height: 332px;
+  content: "";
+  margin: 30px;
+  background-color: #000;
+}
 
 * {
   font-family: "Roboto", sans-serif;
