@@ -9,6 +9,9 @@ section .container {
   justify-content: center;
   align-items: center;
 }
+section .container h3 {
+  margin-bottom: 30px;
+}
 section .container .combo_text {
   display: flex;
   flex-direction: column;
@@ -39,6 +42,7 @@ section .container .artistas {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  padding: 50px;
 }
 section .container .artistas button {
   width: 130px;

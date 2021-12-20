@@ -32,19 +32,14 @@
                     <div class="modal fade" id="<?php echo preg_replace('/\s+/', '', $nome); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                            <div class="modal-header" style="background-image: url('<?php echo esc_url($image); ?>')">
-                                
-                            </div>
-                            <div class="modal-body">
-                                <?php echo get_field('descricao'); ?>
-                            </div>
-                            <div class="modal-footer">
-                                
-                            </div>
+                                <div class="modal-header" style="background-image: url('<?php echo esc_url($image); ?>')"></div>
+                                <div class="modal-body">
+                                    <?php echo get_field('descricao'); ?>
+                                </div>
+                                <div class="modal-footer"></div>
                             </div>
                         </div>
                     </div>
-
                 <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
             <?php else : ?>
