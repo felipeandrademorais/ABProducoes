@@ -8,7 +8,7 @@
 ?>
 
 
-<section class="depoimentos">
+<section class="depoimentos" id="section-4">
     <div class="container">
         <div class="depoimentos_slider">
         <?php if ($the_depoimentos->have_posts()) : ?>

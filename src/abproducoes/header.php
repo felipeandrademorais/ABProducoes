@@ -18,19 +18,16 @@
             <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#section-1">Link</a>
+                        <a class="nav-link" href="#section-1">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section-2">Link</a>
+                        <a class="nav-link" href="#section-2">Nossos Artistas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section-3">Link</a>
+                        <a class="nav-link" href="#section-3">Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section-4">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#section-4">Depoimentos</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-primary" href="#contato" >Contato</a>
