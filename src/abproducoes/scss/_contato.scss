@@ -1,0 +1,27 @@
+.form-container {
+    .wpcf7 {
+        form {
+            font-size: 1rem;
+            p {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            input {
+                border-radius: 3px;
+                width: 444px;
+                height: 40px;
+            }
+            textarea {
+                width: 444px;
+                border-radius: 3px;
+                max-height: 100px;
+            }
+            input[type=submit] {
+                height: 50px;
+                border: 0;
+            } 
+        }    
+    }
+}

@@ -93,6 +93,9 @@ section .section_3 .img::before {
 .depoimentos .container .depoimentos_slider .carousel-depoimento-item {
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover {
   display: flex;
@@ -145,6 +148,30 @@ section .section_3 .img::before {
   font-weight: 100;
   background: transparent;
   margin: 5px;
+}
+
+.form-container .wpcf7 form {
+  font-size: 1rem;
+}
+.form-container .wpcf7 form p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container .wpcf7 form input {
+  border-radius: 3px;
+  width: 444px;
+  height: 40px;
+}
+.form-container .wpcf7 form textarea {
+  width: 444px;
+  border-radius: 3px;
+  max-height: 100px;
+}
+.form-container .wpcf7 form input[type=submit] {
+  height: 50px;
+  border: 0;
 }
 
 * {

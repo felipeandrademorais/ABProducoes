@@ -129,6 +129,34 @@ function wp_ab_customizer( $wp_customize ) {
 		)
 	));
 
+	//section 3
+    $wp_customize->add_section(
+		'set_contato_section',
+		array(
+			'title' => __('Contato'),
+			'description' => __('Editar formulário de contato'),
+			'panel' => 'home_panel'
+        ),
+	);
+
+	//Descrição Página de Contato
+	$wp_customize->add_setting(
+		'set_form_contato',
+		array(
+			'type' => 'theme_mod',
+			'default' => '23'
+		)
+	);
+
+	$wp_customize->add_control(
+		'set_form_contato',
+		  array(
+			'label' => ('Numero do ID do formulário contact-form'),
+			'section' => 'set_contato_section',
+			'type' => 'text'
+		)
+	);
+
 }
 
 add_action( 'customize_register', 'wp_ab_customizer' );
