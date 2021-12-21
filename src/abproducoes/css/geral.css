@@ -24,13 +24,17 @@ section .container .combo_text {
 section .container .combo_text h1 {
   font-size: 60px;
 }
+section .container .combo_text h3 {
+  font-size: 32px;
+}
 section .container .combo_text p {
   max-width: 540px;
-  font-size: 20px;
-  margin: 38px 0;
+  font-size: 18px;
+  margin-bottom: 38px;
 }
 section .container .combo_text small {
   max-width: 540px;
+  font-size: 14px;
 }
 section .container .combo_text a {
   width: 280px;
@@ -81,7 +85,8 @@ section .section_3 .img::before {
   width: 500px;
   height: 332px;
   content: "";
-  margin: 30px;
+  margin-top: -30px;
+  position: relative;
   background-color: #000;
 }
 
