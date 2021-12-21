@@ -14,9 +14,11 @@ function  load_scripts() {
 	wp_enqueue_style('slick_theme',       get_template_directory_uri().'/js/plugins/slick/slick-theme.css', array(), false, 'all');
     
 	//Scripts
+	wp_enqueue_script('script',           get_template_directory_uri().'/js/script.js', array('jquery'), null, true);
     wp_enqueue_script('slick-js',         get_template_directory_uri().'/js/plugins/slick/slick.min.js', array('jquery'), null, true);
     wp_enqueue_script('bootstrap-js',     get_template_directory_uri().'/js/plugins/bootstrap/bootstrap.min.js', array('jquery'), null, true );
 	wp_enqueue_script('bootstrap-bundle', get_template_directory_uri().'/js/plugins/bootstrap/bootstrap.bundle.min.js', array('jquery'), null, true );
+
 }
 
 add_action('wp_enqueue_scripts', 'load_scripts');
@@ -37,6 +39,22 @@ function posts_types() {
 			'supports' => array('title')
 		)
 	);
+	
+	register_post_type (
+		'depoimentos',
+		array(
+			'labels' => array(
+				'name' => __('Depoimentos'),
+				'singular_name' => __('Depoimentos')
+			),
+			'public' => false,
+			'show_ui' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-format-status',
+			'supports' => array('title')
+		)
+	);
 }
+
 
 add_action('init', 'posts_types');

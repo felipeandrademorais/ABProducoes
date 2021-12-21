@@ -80,6 +80,73 @@ section .section_3 .img::before {
   background-color: #000;
 }
 
+.depoimentos .container .depoimentos_slider {
+  width: 100%;
+  height: 100%;
+}
+.depoimentos .container .depoimentos_slider .slick-list {
+  height: 100%;
+}
+.depoimentos .container .depoimentos_slider .slick-list .slick-track {
+  height: 100%;
+}
+.depoimentos .container .depoimentos_slider .carousel-depoimento-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 30px;
+}
+.depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover .text {
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+.depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover .text p {
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover .img img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover .name h3 {
+  font-size: 1.25rem;
+  background: transparent;
+  margin-bottom: 5px;
+}
+.depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover .name p {
+  font-size: 0.81rem;
+  font-weight: 100;
+  background: transparent;
+  margin: 5px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }

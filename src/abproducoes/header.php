@@ -27,13 +27,13 @@
                         <a class="nav-link" href="#section-3">Link</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#section-4">Link</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="#" >Contato</a>
+                        <a class="btn btn-primary" href="#contato" >Contato</a>
                     </li>
                 </ul>
             </div>

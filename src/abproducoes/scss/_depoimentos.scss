@@ -1,0 +1,71 @@
+.depoimentos {
+    .container {
+        .depoimentos_slider {
+            width: 100%;
+            height: 100%;
+            .slick-list{
+                height: 100%;
+                .slick-track {
+                    height: 100%;
+                }
+            }
+            .carousel-depoimento-item {
+                background-repeat: no-repeat;
+                background-size: cover;
+                .carousel-depoimento-item-cover {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: rgba(0,0,0,0.8);
+                    color: #fff;
+                    padding: 30px;
+                    .text {
+                        max-width: 700px;
+                        margin-bottom: 30px;
+                        p {
+                            text-align: center;
+                            font-weight: bold;
+                            background: transparent;
+
+                            overflow: hidden; // Removendo barra de rolagem
+                            text-overflow: ellipsis; // Adicionando "..." ao final
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3; // Quantidade de linhas
+                            -webkit-box-orient: vertical; 
+                        }
+                    }
+                    .img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        border-radius: 50%;
+                        img {
+                            width: 56px;
+                            height: 56px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .name {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        h3 {
+                            font-size: 1.25rem;
+                            background: transparent;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: 0.81rem;
+                            font-weight: 100;
+                            background: transparent;
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
