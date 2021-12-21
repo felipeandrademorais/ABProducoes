@@ -1,6 +1,7 @@
 
 section {
-    height: 700px;
+    max-height: 700px;
+    padding: 100px;
     .container {
         height: 100%;
         display: flex;
@@ -82,8 +83,4 @@ section {
             background-color: #000;
         }
     }
-}
-
-#section-3 {
-    height: 600px;
 }
