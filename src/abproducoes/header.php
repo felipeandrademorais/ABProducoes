@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#section-1">Link</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#section-2">Link</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#section-3">Link</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>

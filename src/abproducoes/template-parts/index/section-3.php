@@ -1,4 +1,4 @@
-<section>
+<section id="section-3">
     <div class="container section_3">
         <div class="combo_text">   
             <h3><?php echo get_theme_mod('set_section_3_titulo');?></h3>

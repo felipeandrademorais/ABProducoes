@@ -7,7 +7,7 @@
     $the_content = new WP_Query($args);
 ?>
 
-<section>
+<section id="section-2">
     <div class="container">
         <h3>Nossos Artistas</h3>
         <div class="artistas">
