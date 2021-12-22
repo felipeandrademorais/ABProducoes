@@ -11,6 +11,9 @@
             display: flex;
             justify-content: space-around;
             list-style: none;
+            a {
+                color: $color_contrast;
+            }
         }
     }
     .featurette-divider {
@@ -28,6 +31,7 @@
             height: 40px;
             border: 1px solid $color_contrast;
             border-radius: 50%;
+            background-color: #f0f0f0;
         }
     }
 }

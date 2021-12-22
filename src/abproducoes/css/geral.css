@@ -20,6 +20,7 @@
 section {
   max-height: 700px;
   padding: 100px;
+  color: #3E4F69;
 }
 section .container {
   height: 100%;
@@ -110,6 +111,10 @@ section .section_3 .img::before {
 
 #section-1 {
   height: 100vh;
+}
+
+#section-4 {
+  background-color: #EBEFF5;
 }
 
 .depoimentos .container .depoimentos_slider {
@@ -207,6 +212,14 @@ section .section_3 .img::before {
 .form-container .wpcf7 form input[type=submit] {
   height: 50px;
   border: 0;
+  background-color: #FFE653;
+}
+
+.modal-content .modal-header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
 }
 
 .footer {
@@ -225,6 +238,9 @@ section .section_3 .img::before {
   justify-content: space-around;
   list-style: none;
 }
+.footer .menu_bar .nav_container a {
+  color: #3E4F69;
+}
 .footer .featurette-divider {
   max-width: 900px;
   width: 100%;
@@ -241,6 +257,7 @@ section .section_3 .img::before {
   height: 40px;
   border: 1px solid #3E4F69;
   border-radius: 50%;
+  background-color: #f0f0f0;
 }
 
 body {

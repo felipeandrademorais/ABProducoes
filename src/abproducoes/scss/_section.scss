@@ -2,6 +2,7 @@
 section {
     max-height: 700px;
     padding: 100px;
+    color: $color_contrast;
     .container {
         height: 100%;
         display: flex;
@@ -92,4 +93,7 @@ section {
 
 #section-1 {
     height: 100vh;
+}
+#section-4 {
+    background-color: #EBEFF5;
 }

@@ -20,10 +20,13 @@
         </div>
         <hr class="featurette-divider">
         <div class="social">
-            <div class="social_item"></div>
-            <div class="social_item"></div>
-            <div class="social_item"></div>
-            <div class="social_item"></div>
+            
+            <a class="social_item" href="#"></a>
+            <a class="social_item" href="#"></a>
+            <a class="social_item" href="#"></a>
+            <a class="social_item" href="#"></a>
+            <a class="social_item" href="#"></a>
+            
         </div>
         <div class="privacy_terms">
             <small>© 2021 Todos os direitos reservados AB Produções.</small>

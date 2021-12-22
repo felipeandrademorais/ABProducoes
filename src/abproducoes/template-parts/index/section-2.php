@@ -36,7 +36,7 @@
                                 <div class="modal-body">
                                     <?php echo get_field('descricao'); ?>
                                 </div>
-                                <div class="modal-footer"></div>
+                                <!-- <div class="modal-footer"></div> -->
                             </div>
                         </div>
                     </div>
