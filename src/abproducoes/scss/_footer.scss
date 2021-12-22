@@ -3,4 +3,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 100px;
+    .menu_bar {
+        max-width: 900px;
+        width: 100%;
+        .nav_container {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+    }
+    .featurette-divider {
+        max-width: 900px;
+        width: 100%;
+        margin: 1rem 0;
+        border: 1px solid $color_contrast;
+    }
+    .social {
+        display: flex;
+        padding: 50px;
+        gap: 30px;
+        .social_item {
+            width: 40px;
+            height: 40px;
+            border: 1px solid $color_contrast;
+            border-radius: 50%;
+        }
+    }
 }

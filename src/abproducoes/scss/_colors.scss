@@ -3,3 +3,22 @@ $color_background: #CFD9E8;
 $color_contrast: #3E4F69;
 $color_complementar: #FFE653;
 $color_background_destac: #4FACFE;
+
+
+.destaque {
+    background-color: #019DAE !important;
+    color: #f4f4f4 !important;
+    .nav-link {
+        color: #f4f4f4 !important;
+    }
+}
+
+.btn-primary {
+    background-color: #FFE653 !important;
+    border-color: #FFE653 !important;
+    color: #3E4F69 !important;
+}
+
+#section-1 {
+    color: #f4f4f4;
+}
