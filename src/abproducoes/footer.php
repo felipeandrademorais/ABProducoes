@@ -8,7 +8,7 @@
                     <a class="nav-link" href="#section-2">Nossos Artistas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-brand" href="#">LOGO</a>
+                    <a class="navbar-brand" href="#"><img src="<?php echo get_theme_mod('set_logo');?>"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#section-3">Quem Somos</a>

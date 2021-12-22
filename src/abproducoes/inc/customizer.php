@@ -157,6 +157,33 @@ function wp_ab_customizer( $wp_customize ) {
 		)
 	);
 
+
+	//Logo Header
+    $wp_customize->add_section(
+		'set_section_logo',
+		array(
+			'title' => __('Logo'),
+			'description' => __('Editar a logo'),
+			'panel' => 'home_panel'
+        ),
+	);
+
+	// Imagem
+	$wp_customize->add_setting(
+		'set_logo',
+		array()
+	);
+
+	$wp_customize->add_control(new WP_Customize_Image_Control(
+		$wp_customize,
+		'set_logo',
+		array(
+			'label' => __('Logo'),
+			'settings'  => 'set_logo',
+			'section'   => 'set_section_logo'
+		)
+	));
+
 }
 
 add_action( 'customize_register', 'wp_ab_customizer' );
