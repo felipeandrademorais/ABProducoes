@@ -92,6 +92,21 @@ section .container .artistas button {
 section .container .artistas button:hover {
   filter: grayscale(0);
 }
+section .container .parceiros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+}
+section .container .parceiros a {
+  width: 130px;
+  height: 130px;
+  border: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 section .section_3 {
   flex-direction: row;
   justify-content: space-between;

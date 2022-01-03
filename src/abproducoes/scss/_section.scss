@@ -63,6 +63,26 @@ section {
                 filter: grayscale(0);
             }
         }
+        .parceiros {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 50px;
+            a {
+                width: 130px;
+                height: 130px;
+                // border-radius: 50%;
+                border: 0;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                // filter: grayscale(100%);
+            }
+            a:hover {
+                // filter: grayscale(0);
+            }
+        }
     }
     .section_3 {
         flex-direction: row;
