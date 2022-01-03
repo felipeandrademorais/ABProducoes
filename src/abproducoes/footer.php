@@ -1,4 +1,4 @@
-    <div class="footer">
+    <div class="footer back-ligth">
         <div class="menu_bar">
             <ul class="nav_container">
                 <li class="nav-item">

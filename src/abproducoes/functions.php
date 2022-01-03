@@ -54,6 +54,21 @@ function posts_types() {
 			'supports' => array('title')
 		)
 	);
+
+	register_post_type (
+		'parceiros',
+		array(
+			'labels' => array(
+				'name' => __('Parceiros'),
+				'singular_name' => __('Parceiros')
+			),
+			'public' => false,
+			'show_ui' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-format-gallery',
+			'supports' => array('title')
+		)
+	);
 }
 
 
