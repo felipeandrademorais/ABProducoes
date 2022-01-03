@@ -1,4 +1,4 @@
-    <div class="footer back-ligth">
+    <div class="footer destaque">
         <div class="menu_bar">
             <ul class="nav_container">
                 <li class="nav-item">
@@ -8,13 +8,19 @@
                     <a class="nav-link" href="#section-2">Nossos Artistas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-brand" href="#"><img src="<?php echo get_theme_mod('set_logo');?>"></a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#section-3">Quem Somos</a>
                 </li>
                 <li class="nav-item">
+                    <a class="navbar-brand" href="#"><img src="<?php echo get_theme_mod('set_logo');?>"></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#section-4">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#section-6">Eventos</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-5">Parceiros</a>
                 </li>
             </ul>
         </div>

@@ -7,7 +7,7 @@
     $the_content = new WP_Query($args);
 ?>
 
-<section id="section-2">
+<section class="back-ligth" id="section-5">
     <div class="container">
         <h3>Parceiros</h3>
         <div class="parceiros">

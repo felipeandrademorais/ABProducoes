@@ -30,6 +30,12 @@
                         <a class="nav-link" href="#section-4">Depoimentos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#section-6">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-5">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="btn btn-primary" href="#contato" >Contato</a>
                     </li>
                 </ul>

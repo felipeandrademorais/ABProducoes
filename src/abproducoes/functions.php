@@ -69,6 +69,21 @@ function posts_types() {
 			'supports' => array('title')
 		)
 	);
+
+	register_post_type (
+		'eventos',
+		array(
+			'labels' => array(
+				'name' => __('Eventos'),
+				'singular_name' => __('Eventos')
+			),
+			'public' => false,
+			'show_ui' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-format-gallery',
+			'supports' => array('title')
+		)
+	);
 }
 
 
