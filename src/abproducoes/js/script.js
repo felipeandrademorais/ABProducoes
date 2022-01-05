@@ -18,8 +18,18 @@ jQuery(($) => {
       infinite: true,
       speed: 300,
       slidesToShow: 1,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            centerMode: false,
+          }
+        }
+      ]
     });
 
-    $('#modal-abertura').modal('show');
+    $('#modal-abertura').delay(3000).modal('show');
+
+    setTimeout(function() { $('#modal-abertura').modal('hide'); }, 5000);
 });

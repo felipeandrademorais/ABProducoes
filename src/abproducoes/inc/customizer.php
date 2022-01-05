@@ -210,6 +210,34 @@ function wp_ab_customizer( $wp_customize ) {
 		)
 	));
 
+	//section 3
+    $wp_customize->add_section(
+		'set_whats_section',
+		array(
+			'title' => __('Whatsapp Contato'),
+			'description' => __('Editar número whatsapp contato'),
+			'panel' => 'home_panel'
+        ),
+	);
+
+	//Descrição Página de Contato
+	$wp_customize->add_setting(
+		'set_whatsapp',
+		array(
+			'type' => 'theme_mod',
+			'default' => '5549999987007'
+		)
+	);
+
+	$wp_customize->add_control(
+		'set_whatsapp',
+		  array(
+			'label' => ('Informe o número do Whatsapp sem pontuação nem espaçamento'),
+			'section' => 'set_whats_section',
+			'type' => 'text'
+		)
+	);
+
 }
 
 add_action( 'customize_register', 'wp_ab_customizer' );

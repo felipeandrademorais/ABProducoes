@@ -27,7 +27,6 @@
 }
 
 section {
-  max-height: 700px;
   padding: 100px;
   color: #3E4F69;
 }
@@ -37,6 +36,7 @@ section .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 section .container h3 {
   margin-bottom: 30px;
@@ -77,10 +77,11 @@ section .container .artistas {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 50px;
 }
-section .container .artistas button {
+section .container .artistas .toggle-artista {
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -89,13 +90,14 @@ section .container .artistas button {
   background-size: cover;
   filter: grayscale(100%);
 }
-section .container .artistas button:hover {
+section .container .artistas .toggle-artista:hover {
   filter: grayscale(0);
 }
 section .container .parceiros {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 50px;
 }
@@ -109,7 +111,9 @@ section .container .parceiros a {
 }
 section .section_3 {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 section .section_3 .combo_text {
   max-width: 50%;
@@ -120,7 +124,7 @@ section .section_3 .img {
   width: 500px;
   height: 332px;
   background-size: contain;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -141,6 +145,26 @@ section .section_3 .img::before {
   background-color: #EBEFF5;
 }
 
+@media (max-width: 980px) {
+  section {
+    padding: 30px;
+  }
+  section .section_3 .combo_text {
+    max-width: 100%;
+  }
+
+  #section-1 .combo_text h1 {
+    font-size: 30px;
+  }
+  #section-1 .combo_text p {
+    font-size: 12px;
+  }
+  #section-1 .combo_text a {
+    width: 180px;
+    height: 34px;
+    font-size: 12px;
+  }
+}
 .depoimentos .container .depoimentos_slider {
   width: 100%;
   height: 100%;
@@ -206,6 +230,7 @@ section .section_3 .img::before {
   font-size: 1.25rem;
   background: transparent;
   margin-bottom: 5px;
+  text-align: center;
 }
 .depoimentos .container .depoimentos_slider .carousel-depoimento-item .carousel-depoimento-item-cover .name p {
   font-size: 0.81rem;
@@ -215,8 +240,11 @@ section .section_3 .img::before {
 }
 
 .eventos {
-  margin: 100px;
-  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.eventos .container {
+  padding: 50px;
 }
 .eventos .container .eventos_slider {
   width: 100%;
@@ -249,7 +277,7 @@ section .section_3 .img::before {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 10px;
 }
 .eventos .container .eventos_slider .carousel-evento-item .carousel-evento-item-cover .text {
   max-width: 700px;
@@ -294,6 +322,36 @@ section .section_3 .img::before {
   margin: 5px;
 }
 
+@media (max-width: 980px) {
+  .eventos .container {
+    padding: 20px;
+  }
+}
+#contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contato .agrouped-container {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contato .agrouped-container .container {
+  flex-direction: column;
+  width: auto;
+}
+#contato .agrouped-container h3 {
+  padding: 30px;
+}
+#contato .agrouped-container h5 {
+  max-width: 200px;
+  text-align: center;
+}
+
 .form-container .wpcf7 form {
   font-size: 1rem;
 }
@@ -305,18 +363,23 @@ section .section_3 .img::before {
 }
 .form-container .wpcf7 form input {
   border-radius: 3px;
-  width: 444px;
+  max-width: 444px;
+  width: 100%;
   height: 40px;
 }
 .form-container .wpcf7 form textarea {
-  width: 444px;
+  max-width: 444px;
+  width: 100%;
+  height: 100px;
   border-radius: 3px;
-  max-height: 100px;
 }
 .form-container .wpcf7 form input[type=submit] {
   height: 50px;
   border: 0;
   background-color: #FFE653;
+}
+.form-container .wpcf7 form label {
+  width: 100%;
 }
 
 .modal-content .modal-header {
@@ -324,6 +387,23 @@ section .section_3 .img::before {
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
+  position: relative;
+}
+.modal-content .modal-header button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.modal-content .modal-header button span {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
 }
 
 .footer {
@@ -340,10 +420,15 @@ section .section_3 .img::before {
 .footer .menu_bar .nav_container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .footer .menu_bar .nav_container a {
   color: #3E4F69;
+  text-align: center;
 }
 .footer .featurette-divider {
   max-width: 900px;
@@ -353,6 +438,7 @@ section .section_3 .img::before {
 }
 .footer .social {
   display: flex;
+  flex-wrap: wrap;
   padding: 50px;
   gap: 30px;
 }

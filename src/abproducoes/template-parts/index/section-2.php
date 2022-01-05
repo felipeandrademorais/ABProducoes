@@ -22,6 +22,7 @@
 
                     <!-- Buttom -->
                     <button 
+                        class="toggle-artista"
                         type="button" 
                         data-toggle="modal" 
                         data-target="#<?php echo preg_replace('/\s+/', '', $nome); ?>"  
@@ -32,11 +33,14 @@
                     <div class="modal fade" id="<?php echo preg_replace('/\s+/', '', $nome); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <div class="modal-header" style="background-image: url('<?php echo esc_url($image); ?>')"></div>
+                                <div class="modal-header" style="background-image: url('<?php echo esc_url($image); ?>')">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
                                 <div class="modal-body">
                                     <?php echo get_field('descricao'); ?>
                                 </div>
-                                <!-- <div class="modal-footer"></div> -->
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 
 section {
-    max-height: 700px;
     padding: 100px;
     color: $color_contrast;
     .container {
@@ -9,6 +8,7 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         h3 {
             margin-bottom: 30px;
         }
@@ -48,9 +48,10 @@ section {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
             gap: 30px;
             padding: 50px;
-            button {
+            .toggle-artista {
                 width: 130px;
                 height: 130px;
                 border-radius: 50%;
@@ -59,7 +60,7 @@ section {
                 background-size: cover;
                 filter: grayscale(100%);
             }
-            button:hover {
+            .toggle-artista:hover {
                 filter: grayscale(0);
             }
         }
@@ -67,26 +68,24 @@ section {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
             gap: 30px;
             padding: 50px;
             a {
                 width: 130px;
                 height: 130px;
-                // border-radius: 50%;
                 border: 0;
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
-                // filter: grayscale(100%);
-            }
-            a:hover {
-                // filter: grayscale(0);
             }
         }
     }
     .section_3 {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
         .combo_text {
             max-width: 50%;
             align-items: flex-start;
@@ -96,7 +95,7 @@ section {
             width: 500px;
             height: 332px;
             background-size: contain;
-            background-position: right;
+            background-position: center;
             background-repeat: no-repeat;
             position: relative;
         }
@@ -116,4 +115,31 @@ section {
 }
 #section-4 {
     background-color: #EBEFF5;
+}
+
+@media (max-width: 980px) {
+    section {
+        padding: 30px;
+        .section_3 {
+            .combo_text {
+                max-width: 100%;
+            }
+        }
+    }
+
+    #section-1 {
+        .combo_text {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 12px;
+            }
+            a {
+                width: 180px;
+                height: 34px;
+                font-size: 12px;
+            }
+        }
+    }
 }

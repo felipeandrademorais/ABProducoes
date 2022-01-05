@@ -10,9 +10,14 @@
         .nav_container {
             display: flex;
             justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
             list-style: none;
+            margin: 0;
+            padding: 0;
             a {
                 color: $color_contrast;
+                text-align: center;
             }
         }
     }
@@ -24,6 +29,7 @@
     }
     .social {
         display: flex;
+        flex-wrap: wrap;
         padding: 50px;
         gap: 30px;
         .social_item {
@@ -34,4 +40,12 @@
             background-color: #f0f0f0;
         }
     }
+}
+
+
+
+@media (max-width: 980px) {
+
+
+
 }
