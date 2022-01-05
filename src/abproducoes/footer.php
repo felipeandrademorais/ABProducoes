@@ -27,11 +27,9 @@
         <hr class="featurette-divider">
         <div class="social">
             
-            <a class="social_item" href="#"></a>
-            <a class="social_item" href="#"></a>
-            <a class="social_item" href="#"></a>
-            <a class="social_item" href="#"></a>
-            <a class="social_item" href="#"></a>
+            <a class="social_item" href="#"><span class="iconify" data-icon="entypo-social:facebook-with-circle"></span></a>
+            <a class="social_item" href="#"><span class="iconify" data-icon="entypo-social:instagram-with-circle"></span></a>
+            <a class="social_item" href="#"><span class="iconify" data-icon="entypo-social:youtube-with-circle"></span></a>
             
         </div>
         <div class="privacy_terms">
