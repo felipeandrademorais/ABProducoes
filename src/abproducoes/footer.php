@@ -27,13 +27,31 @@
         <hr class="featurette-divider">
         <div class="social">
             
-            <a class="social_item" href="#"><span class="iconify" data-icon="entypo-social:facebook-with-circle"></span></a>
-            <a class="social_item" href="#"><span class="iconify" data-icon="entypo-social:instagram-with-circle"></span></a>
-            <a class="social_item" href="#"><span class="iconify" data-icon="entypo-social:youtube-with-circle"></span></a>
+            <a 
+                target="_blank" 
+                class="<?php echo empty(get_theme_mod('set_facebook')) ? 'd-none' : 'social_item';?>" 
+                href="<?php echo get_theme_mod('set_facebook');?>"
+            >
+                <span class="iconify" data-icon="entypo-social:facebook-with-circle"></span>
+            </a>
+            <a 
+                target="_blank"
+                class="<?php echo empty(get_theme_mod('set_instagram')) ? 'd-none' : 'social_item';?>" 
+                href="<?php echo get_theme_mod('set_instagram');?>"
+            >
+                <span class="iconify" data-icon="entypo-social:instagram-with-circle"></span>
+            </a>
+            <a 
+                target="_blank"
+                class="<?php echo empty(get_theme_mod('set_youtube')) ? 'd-none' : 'social_item';?>"  
+                href="<?php echo get_theme_mod('set_youtube');?>"
+            >
+                <span class="iconify" data-icon="entypo-social:youtube-with-circle"></span>
+            </a>
             
         </div>
         <div class="privacy_terms">
-            <small>© 2021 Todos os direitos reservados AB Produções.</small>
+            <small>© 2022 Todos os direitos reservados AB Produções.</small>
         </div>
     </div>
     <?php wp_footer(); ?>

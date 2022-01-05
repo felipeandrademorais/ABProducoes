@@ -210,7 +210,7 @@ function wp_ab_customizer( $wp_customize ) {
 		)
 	));
 
-	//section 3
+	//section whatsapp
     $wp_customize->add_section(
 		'set_whats_section',
 		array(
@@ -220,7 +220,7 @@ function wp_ab_customizer( $wp_customize ) {
         ),
 	);
 
-	//Descrição Página de Contato
+	//Numero Celular contato Whatsapp
 	$wp_customize->add_setting(
 		'set_whatsapp',
 		array(
@@ -234,6 +234,70 @@ function wp_ab_customizer( $wp_customize ) {
 		  array(
 			'label' => ('Informe o número do Whatsapp sem pontuação nem espaçamento'),
 			'section' => 'set_whats_section',
+			'type' => 'text'
+		)
+	);
+
+	//section Redes Sociais
+    $wp_customize->add_section(
+		'set_social_section',
+		array(
+			'title' => __('Redes Sociais'),
+			'description' => __('Editar redes sociais'),
+			'panel' => 'home_panel'
+        ),
+	);
+
+	//Facebook
+	$wp_customize->add_setting(
+		'set_facebook',
+		array(
+			'type' => 'theme_mod',
+			'default' => 'https://www.facebook.com/adrianobedinproducoes'
+		)
+	);
+
+	$wp_customize->add_control(
+		'set_facebook',
+		  array(
+			'label' => ('Informe o link da sua conta no facebook'),
+			'section' => 'set_social_section',
+			'type' => 'text'
+		)
+	);
+
+	//Instagram
+	$wp_customize->add_setting(
+		'set_instagram',
+		array(
+			'type' => 'theme_mod',
+			'default' => 'https://www.instagram.com/adriano_bedin/'
+		)
+	);
+
+	$wp_customize->add_control(
+		'set_instagram',
+		  array(
+			'label' => ('Informe o link da sua conta no Instagram'),
+			'section' => 'set_social_section',
+			'type' => 'text'
+		)
+	);
+
+	//Youtube
+	$wp_customize->add_setting(
+		'set_youtube',
+		array(
+			'type' => 'theme_mod',
+			'default' => 'https://www.youtube.com/channel/UCRYk8dxLh5N2tVHJudwcHWw'
+		)
+	);
+
+	$wp_customize->add_control(
+		'set_youtube',
+		  array(
+			'label' => ('Informe o link da sua conta no Youtube'),
+			'section' => 'set_social_section',
 			'type' => 'text'
 		)
 	);
