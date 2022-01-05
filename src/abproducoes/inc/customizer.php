@@ -184,6 +184,32 @@ function wp_ab_customizer( $wp_customize ) {
 		)
 	));
 
+	//Logo Abertura
+    $wp_customize->add_section(
+		'set_section_abertura',
+		array(
+			'title' => __('Logo Abertura'),
+			'description' => __('Editar a logo de abertura da página'),
+			'panel' => 'home_panel'
+        ),
+	);
+
+	// Imagem
+	$wp_customize->add_setting(
+		'set_logo_abertura',
+		array()
+	);
+
+	$wp_customize->add_control(new WP_Customize_Image_Control(
+		$wp_customize,
+		'set_logo_abertura',
+		array(
+			'label' => __('Logo Abertura'),
+			'settings'  => 'set_logo_abertura',
+			'section'   => 'set_section_abertura'
+		)
+	));
+
 }
 
 add_action( 'customize_register', 'wp_ab_customizer' );

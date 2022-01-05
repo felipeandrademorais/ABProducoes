@@ -14,9 +14,12 @@ jQuery(($) => {
     $('.eventos_slider').slick({
       dots: true,
       arrows: true,
+      centerMode: true,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
       adaptiveHeight: true
     });
+
+    $('#modal-abertura').modal('show');
 });
