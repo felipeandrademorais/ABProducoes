@@ -1,15 +1,30 @@
+    <?php 
+        $args = array(
+            'post_status'    => 'publish',
+            'post_type'      => 'logos_rodape',
+        );
+
+        $the_eventos = new WP_Query($args);
+    ?>
+
     <div class="footer destaque">
         <div class="menu_bar">
             <ul class="nav_container">
-                <li class="nav-item">
-                    <a class="navbar-brand" href="#"><img src="<?php echo get_theme_mod('set_logo_rodape_1');?>"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar-brand" href="#"><img src="<?php echo get_theme_mod('set_logo');?>"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar-brand" href="#"><img src="<?php echo get_theme_mod('set_logo_rodape_2');?>"></a>
-                </li>
+                <?php if ($the_eventos->have_posts()) : ?>
+                    <?php 
+                        while ($the_eventos->have_posts()) : $the_eventos->the_post();
+                            $imagens = get_field('imagem'); 
+                            foreach($imagens as $image):
+                    ?>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#"><img src="<?php echo $image['full_image_url']?>" alt="<?php echo $image['title']; ?>"></a>
+                                </li>
+                    <?php 
+                            endforeach; 
+                        endwhile; 
+                    ?>
+                        <?php wp_reset_postdata(); ?>                
+                <?php endif; ?>
             </ul>
         </div>
         <hr class="featurette-divider">

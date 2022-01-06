@@ -84,6 +84,21 @@ function posts_types() {
 			'supports' => array('title')
 		)
 	);
+
+	register_post_type (
+		'logos_rodape',
+		array(
+			'labels' => array(
+				'name' => __('Logos Rodapé'),
+				'singular_name' => __('Logos Rodapé')
+			),
+			'public' => false,
+			'show_ui' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-format-gallery',
+			'supports' => array('title')
+		)
+	);
 }
 
 

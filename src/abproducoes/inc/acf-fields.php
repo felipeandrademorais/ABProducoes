@@ -324,25 +324,6 @@ if( function_exists('acf_add_local_field_group') ):
 				),
 				'edit_modal' => 'Default',
 			),
-			array(
-				'key' => 'field_61d2f65951796',
-				'label' => 'Descricao',
-				'name' => 'descricao',
-				'type' => 'textarea',
-				'instructions' => 'Informe uma breve descrição do evento.',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'default_value' => '',
-				'placeholder' => '',
-				'maxlength' => '',
-				'rows' => '',
-				'new_lines' => '',
-			),
 		),
 		'location' => array(
 			array(
@@ -350,6 +331,52 @@ if( function_exists('acf_add_local_field_group') ):
 					'param' => 'post_type',
 					'operator' => '==',
 					'value' => 'eventos',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	));
+
+	acf_add_local_field_group(array(
+		'key' => 'group_61d74bfdcd89c',
+		'title' => 'Logos Rodape',
+		'fields' => array(
+			array(
+				'key' => 'field_61d74c059636b',
+				'label' => 'Imagem',
+				'name' => 'imagem',
+				'type' => 'photo_gallery',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'fields[imagem' => array(
+					'edit_modal' => 'Default',
+					'images_limit' => '',
+					'remove_edit_button' => 'No',
+					'remove_delete_button' => 'No',
+				),
+				'edit_modal' => 'Default',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'logos_rodape',
 				),
 			),
 		),
