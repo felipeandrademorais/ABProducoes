@@ -42,6 +42,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
+                                    <?php echo '<h1>' . $nome_field . '</h1>'; ?>
                                     <?php echo get_field('descricao'); ?>
                                 </div>
                             </div>

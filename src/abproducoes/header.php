@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="04OO2_3JOGv4xVmz6L7Ec-k0456ncPQsT3Gr1FtEK1k" />
         <title>AB Produções</title>
         <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
         <?php wp_head(); ?>
