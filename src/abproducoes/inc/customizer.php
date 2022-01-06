@@ -184,6 +184,48 @@ function wp_ab_customizer( $wp_customize ) {
 		)
 	));
 
+	//Logos Rodapé
+    $wp_customize->add_section(
+		'set_section_logo_radape',
+		array(
+			'title' => __('Logo Rodapé'),
+			'description' => __('Editar logo rodapé'),
+			'panel' => 'home_panel'
+        ),
+	);
+
+	// Imagem
+	$wp_customize->add_setting(
+		'set_logo_rodape_1',
+		array()
+	);
+
+	$wp_customize->add_control(new WP_Customize_Image_Control(
+		$wp_customize,
+		'set_logo_rodape_1',
+		array(
+			'label' => __('Logo Rodapé 1'),
+			'settings'  => 'set_logo_rodape_1',
+			'section'   => 'set_section_logo_radape'
+		)
+	));
+
+	// Imagem
+	$wp_customize->add_setting(
+		'set_logo_rodape_2',
+		array()
+	);
+
+	$wp_customize->add_control(new WP_Customize_Image_Control(
+		$wp_customize,
+		'set_logo_rodape_2',
+		array(
+			'label' => __('Logo Rodapé 2'),
+			'settings'  => 'set_logo_rodape_2',
+			'section'   => 'set_section_logo_radape'
+		)
+	));
+
 	//Logo Abertura
     $wp_customize->add_section(
 		'set_section_abertura',

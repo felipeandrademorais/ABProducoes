@@ -20,14 +20,17 @@
                         $nome = strval($nome_field);
                     ?>
 
-                    <!-- Buttom -->
-                    <button 
-                        class="toggle-artista"
-                        type="button" 
-                        data-toggle="modal" 
-                        data-target="#<?php echo preg_replace('/\s+/', '', $nome); ?>"  
-                        style="background-image: url('<?php echo esc_url($image); ?>')"
-                    ></button>
+                    <div class="artista-item">
+                        <small><?php echo $nome_field; ?></small>
+                        <!-- Buttom -->
+                        <button 
+                            class="toggle-artista"
+                            type="button" 
+                            data-toggle="modal" 
+                            data-target="#<?php echo preg_replace('/\s+/', '', $nome); ?>"  
+                            style="background-image: url('<?php echo esc_url($image); ?>')"
+                        ></button>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="<?php echo preg_replace('/\s+/', '', $nome); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

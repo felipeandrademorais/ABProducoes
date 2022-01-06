@@ -81,6 +81,12 @@ section .container .artistas {
   gap: 30px;
   padding: 50px;
 }
+section .container .artistas .artista-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
 section .container .artistas .toggle-artista {
   width: 130px;
   height: 130px;
@@ -246,9 +252,16 @@ section .section_3 .img::before {
 .eventos .container {
   padding: 50px;
 }
+.eventos .container h2 {
+  padding: 50px;
+}
 .eventos .container .eventos_slider {
   width: 100%;
   height: 100%;
+}
+.eventos .container .eventos_slider .slick-dots {
+  padding: 20px;
+  position: relative;
 }
 .eventos .container .eventos_slider .slick-list {
   height: 100%;
@@ -325,6 +338,9 @@ section .section_3 .img::before {
 @media (max-width: 980px) {
   .eventos .container {
     padding: 20px;
+  }
+  .eventos .container h2 {
+    padding: 5px;
   }
 }
 #contato {
