@@ -12,7 +12,7 @@ jQuery(($) => {
         arrows: false,
     });
     $('.eventos_slider').slick({
-      dots: true,
+      dots: false,
       arrows: true,
       centerMode: true,
       infinite: true,

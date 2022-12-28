@@ -76,7 +76,8 @@
             
         </div>
         <div class="privacy_terms">
-            <small>© 2022 Todos os direitos reservados AB Produções.</small>
+            <small><?php echo get_theme_mod('set_privacity_text'); ?></small>
+            <small>Desenvolvido por <a href="http://sobre.felipemorais.info/">Felipe Morais</a></small>
         </div>
     </div>
     <?php wp_footer(); ?>

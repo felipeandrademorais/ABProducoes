@@ -302,6 +302,34 @@ function wp_ab_customizer( $wp_customize ) {
 		)
 	);
 
+	//Termos de Privacidade
+    $wp_customize->add_section(
+		'set_privacity_terms',
+		array(
+			'title' => __('Termos de Privacidade'),
+			'description' => __('Editar termos de privacidade rodapé'),
+			'panel' => 'home_panel'
+        ),
+	);
+
+	//Termo de Privacidade
+	$wp_customize->add_setting(
+		'set_privacity_text',
+		array(
+			'type' => 'theme_mod',
+			'default' => '© 2022 Todos os direitos reservados AB Produções.'
+		)
+	);
+
+	$wp_customize->add_control(
+		'set_privacity_text',
+		  array(
+			'label' => ('Informe o termo de privacidade desejado.'),
+			'section' => 'set_privacity_terms',
+			'type' => 'text'
+		)
+	);
+
 }
 
 add_action( 'customize_register', 'wp_ab_customizer' );
