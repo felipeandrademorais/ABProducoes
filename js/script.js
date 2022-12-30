@@ -18,7 +18,6 @@ jQuery(($) => {
       infinite: true,
       speed: 300,
       slidesToShow: 1,
-      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 1024,
