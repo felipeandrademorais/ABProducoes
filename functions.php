@@ -107,25 +107,33 @@ add_action('init', 'posts_types');
 
 function alterar_tipografia_tema()
 {
-	// Obtenha as opções de tipografia escolhidas pelo usuário
-	$fonte = get_theme_mod('fonte_tema', 'Open Sans');
+	$fonte = get_theme_mod('fonte_tema', 'Roboto');
 	$tamanho_fonte = get_theme_mod('tamanho_fonte_tema', '60');
-	$cor_texto = get_theme_mod('cor_texto_tema', '#000000');
+	$cor_texto = get_theme_mod('cor_texto_tema', '#f4f4f4');
 
-	// Adicione o estilo de fonte à página
-	echo '<style type="text/css">';
-	echo 'body #section-1 .container .combo_text h1 { font-family: "' . $fonte . '", sans-serif !important; font-size: ' . $tamanho_fonte . 'px !important; color: ' . $cor_texto . ' !important;}';
-	echo '</style>';
+	$style = '
+		<style type="text/css">
+			body #section-1 .container .combo_text h1 { 
+				font-family: "' . $fonte . '", sans-serif; 
+				font-size: ' . $tamanho_fonte . 'px; 
+				color: ' . $cor_texto . ';
+			}
+			@media (max-width: 980px) {
+				body #section-1 .container .combo_text h1 { 
+					font-size: ' . ($tamanho_fonte / 2) . 'px;
+				}
+			}
+		</style>
+	';
+
+	echo $style;
 }
 add_action('wp_head', 'alterar_tipografia_tema');
 
 function sanitize_tamanho_fonte($input)
 {
-	// Verifique se o valor é um número válido seguido de "px"
 	if (preg_match('/^\d+$/', $input)) {
 		return $input;
 	}
-
-	// Caso contrário, retorne o valor padrão
 	return '60';
 }

@@ -155,14 +155,12 @@ section .section_3 .img::before {
 @media (max-width: 980px) {
   section {
     padding: 30px;
+    width: 100%;
   }
   section .section_3 .combo_text {
     max-width: 100%;
   }
 
-  #section-1 .combo_text h1 {
-    font-size: 30px;
-  }
   #section-1 .combo_text p {
     font-size: 12px;
   }
