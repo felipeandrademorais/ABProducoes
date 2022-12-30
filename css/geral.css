@@ -5,8 +5,8 @@
 }
 
 .destaque {
-  background-color: #120a8f !important;
-  color: #f4f4f4 !important;
+  background-color: #120a8f;
+  color: #f4f4f4;
 }
 .destaque .nav-link {
   color: #f4f4f4 !important;
@@ -308,6 +308,9 @@ section .section_3 .img::before {
   -webkit-box-orient: vertical;
 }
 .eventos .container .eventos_slider .carousel-evento-item .carousel-evento-item-cover .img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,6 +319,8 @@ section .section_3 .img::before {
 }
 .eventos .container .eventos_slider .carousel-evento-item .carousel-evento-item-cover .img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .eventos .container .eventos_slider .carousel-evento-item .carousel-evento-item-cover .name {
   display: flex;
@@ -485,7 +490,6 @@ section .section_3 .img::before {
   color: #F3F3F3;
 }
 body {
-  font-family: "Roboto", sans-serif;
   background-color: #F0FFFE;
 }
 
