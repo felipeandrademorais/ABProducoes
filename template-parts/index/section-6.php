@@ -1,7 +1,8 @@
 <?php 
      $args = array(
-        'post_status'    => 'publish',
-        'post_type'      => 'eventos',
+    'post_status'    => 'publish',
+    'post_type'      => 'eventos',
+    'posts_per_page'  => -1,
     );
 
     $the_eventos = new WP_Query($args);

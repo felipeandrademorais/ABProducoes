@@ -20,10 +20,10 @@
                 }   
             }
             .slick-prev:before, .slick-next:before {
-                color: #3E4F69;
+                color: $color_contrast;
             }
             .slick-dots li button:before{
-                color: #3E4F69;
+                color: $color_contrast;
             }
             .carousel-evento-item {
                 width: 100%;

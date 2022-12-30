@@ -1,7 +1,8 @@
 <?php 
      $args = array(
-        'post_status'    => 'publish',
-        'post_type'      => 'depoimentos',
+    'post_status'    => 'publish',
+    'post_type'      => 'depoimentos',
+    'posts_per_page'  => -1,
     );
 
     $the_depoimentos = new WP_Query($args);

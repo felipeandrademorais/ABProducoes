@@ -1,7 +1,8 @@
 <?php
     $args = array(
-        'post_status'    => 'publish',
-        'post_type'      => 'artistas',
+    'post_status'     => 'publish',
+    'post_type'       => 'artistas',
+    'posts_per_page'  => -1,
     );
 
     $the_content = new WP_Query($args);
