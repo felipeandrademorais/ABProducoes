@@ -43,8 +43,45 @@ function wp_ab_customizer( $wp_customize ) {
         ),
 	);
 
+	// Adicione um controle de seleção de fonte
+	$wp_customize->add_setting('fonte_tema', array(
+		'default' => 'Roboto',
+	));
+	$wp_customize->add_control('fonte_tema', array(
+		'label' => 'Fonte',
+		'section' => 'set_section_1',
+		'type' => 'select',
+		'choices' => array(
+			'Dancing Script' => 'Dancing Script',
+			'Roboto' => 'Roboto',
+			'Parisienne' => 'Parisienne',
+			'Petit Formal Script' => 'Petit Formal Script',
+			'Source Code Pro' => 'Source Code Pro',
+		),
+	));
+
+	$wp_customize->add_setting('tamanho_fonte_tema', array(
+		'default' => '60',
+		'sanitize_callback' => 'sanitize_tamanho_fonte',
+	));
+
+	$wp_customize->add_control('tamanho_fonte_tema', array(
+		'label' => 'Tamanho da Fonte',
+		'section' => 'set_section_1',
+		'type' => 'text',
+	));
+
+	$wp_customize->add_setting('cor_texto_tema', array(
+		'default' => '#f4f4f4',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'cor_texto_tema', array(
+		'label' => 'Cor do Texto',
+		'section' => 'set_section_1',
+	)));
+
 	$wp_customize->add_control(
-		'set_section_1_subtitulo', 
+		'set_section_1_subtitulo',
 		array(
 			'label' => ('Subtítulo'),
 			'section' => 'set_section_1',
